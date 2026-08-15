@@ -1,0 +1,550 @@
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 30px;
+  margin-top: 30px;
+  max-width: 850px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.header p {
+  color: #94a3b8;
+  margin: 0 0 24px;
+  font-size: 16px;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.card textarea {
+  width: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+
+  padding: 15px;
+
+  border-radius: 10px;
+  border: 1px solid #475569;
+
+  background: #0f172a;
+  color: #ffffff;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  resize: vertical;
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card textarea::placeholder {
+  color: #64748b;
+}
+
+.card textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.card textarea:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   MAIN BUTTON
+========================================= */
+
+.card > button {
+  margin-top: 20px;
+
+  background: #6366f1;
+  color: #ffffff;
+
+  border: none;
+  padding: 14px 24px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card > button:hover:not(:disabled) {
+  background: #4f46e5;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.3);
+}
+
+.card > button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error {
+  margin-top: 24px;
+  padding: 16px 18px;
+
+  border-radius: 12px;
+
+  background: rgba(127, 29, 29, 0.25);
+  border: 1px solid #7f1d1d;
+
+  color: #fca5a5;
+}
+
+.error strong {
+  display: block;
+  color: #f87171;
+  margin-bottom: 6px;
+}
+
+.error p {
+  margin: 0;
+  color: #fca5a5;
+}
+
+
+/* =========================================
+   RESEARCH PROGRESS
+========================================= */
+
+.progress {
+  margin-top: 30px;
+
+  padding: 24px;
+
+  background: #172033;
+  border: 1px solid #334155;
+
+  border-radius: 16px;
+}
+
+.progress h3 {
+  margin: 0 0 24px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   INDIVIDUAL STEP
+========================================= */
+
+.step {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 15px;
+
+  padding: 14px 0;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Connecting line */
+
+.step:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 11px;
+  top: 38px;
+
+  width: 2px;
+  height: calc(100% - 12px);
+
+  background: #334155;
+}
+
+
+/* =========================================
+   STEP ICON
+========================================= */
+
+.icon {
+  position: relative;
+  z-index: 2;
+
+  width: 24px;
+  height: 24px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #0f172a;
+
+  color: #64748b;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   PENDING STEP
+========================================= */
+
+.pending {
+  opacity: 0.65;
+}
+
+.pending .icon {
+  border: 2px solid #64748b;
+  color: #64748b;
+}
+
+
+/* =========================================
+   ACTIVE STEP
+========================================= */
+
+.active {
+  opacity: 1;
+}
+
+.active .icon {
+  border: 2px solid #818cf8;
+
+  color: #ffffff;
+
+  background: #6366f1;
+
+  box-shadow:
+    0 0 0 5px rgba(99, 102, 241, 0.15),
+    0 0 15px rgba(99, 102, 241, 0.45);
+
+  animation: pulse 1.5s infinite;
+}
+
+.active strong {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   COMPLETED STEP
+========================================= */
+
+.completed {
+  opacity: 1;
+}
+
+.completed .icon {
+  border: 2px solid #22c55e;
+
+  background: #22c55e;
+
+  color: #ffffff;
+
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+}
+
+.completed strong {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   STEP TEXT
+========================================= */
+
+.step strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #e2e8f0;
+}
+
+.step p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   COMPLETED RESULT
+========================================= */
+
+.result {
+  margin-top: 25px;
+
+  padding: 24px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(34, 197, 94, 0.10),
+      rgba(99, 102, 241, 0.10)
+    );
+
+  border: 1px solid rgba(99, 102, 241, 0.35);
+}
+
+.result h3 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+}
+
+.result > p {
+  margin: 0 0 20px;
+
+  color: #94a3b8;
+}
+
+
+/* =========================================
+   REPORT ID
+========================================= */
+
+.reportId {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 20px;
+
+  padding: 12px 14px;
+
+  background: #0f172a;
+
+  border: 1px solid #334155;
+
+  border-radius: 10px;
+}
+
+.reportId span {
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.06em;
+}
+
+.reportId code {
+  color: #c7d2fe;
+
+  font-size: 13px;
+
+  word-break: break-all;
+}
+
+
+/* =========================================
+   VIEW REPORT BUTTON
+========================================= */
+
+.viewButton {
+  margin-top: 0 !important;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #6366f1 !important;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 13px 22px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.viewButton:hover:not(:disabled) {
+  background: #4f46e5 !important;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(79, 70, 229, 0.3);
+}
+
+.viewButton:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(99, 102, 241, 0.5);
+  }
+
+  70% {
+    box-shadow:
+      0 0 0 8px rgba(99, 102, 241, 0);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(99, 102, 241, 0);
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .card {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .header h2 {
+    font-size: 24px;
+  }
+
+  .progress {
+    padding: 18px;
+  }
+
+  .step {
+    gap: 12px;
+  }
+
+  .step strong {
+    font-size: 15px;
+  }
+
+  .step p {
+    font-size: 13px;
+  }
+
+  .result {
+    padding: 18px;
+  }
+
+  .viewButton {
+    width: 100%;
+  }
+}
+
+.duration {
+    margin-left: auto;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #a5b4fc;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.totalTime {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    padding: 16px 18px;
+
+    border-radius: 10px;
+
+    background: #111827;
+    border: 1px solid #4f46e5;
+
+    color: #cbd5e1;
+}
+
+.totalTime strong {
+    color: #a5b4fc;
+    font-size: 18px;
+}
+
+.failed {
+    border-color: #7f1d1d;
+}
+
+.failed .icon {
+    color: #f87171;
+}

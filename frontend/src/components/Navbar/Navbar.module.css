@@ -1,0 +1,65 @@
+.navbar{
+
+    height:80px;
+
+    background:#111827;
+
+    border-bottom:1px solid #263244;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+}
+
+.navbar h2{
+
+    color:white;
+
+}
+
+.navbar p{
+
+    color:#94A3B8;
+
+    margin-top:4px;
+
+}
+
+.right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    color:white;
+
+}
+
+.avatar{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#6366F1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}

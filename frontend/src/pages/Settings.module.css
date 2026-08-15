@@ -1,0 +1,607 @@
+/* =========================================
+   SETTINGS PAGE
+   ========================================= */
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  color: #0f3b82;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+  margin-bottom: 32px;
+}
+
+.title {
+  margin: 0 0 8px;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  color: #0f3b82;
+
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0;
+
+  font-size: 17px;
+
+  color: #5274a8;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   CARD
+   ========================================= */
+
+.card {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 26px;
+
+  margin-bottom: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe3ef;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 18px rgba(15, 59, 130, 0.05);
+}
+
+
+/* =========================================
+   SECTION HEADER
+   ========================================= */
+
+.sectionHeader {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 24px;
+}
+
+.sectionIcon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+.sectionTitle {
+  margin: 0 0 4px;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #0f3b82;
+}
+
+.sectionSubtitle {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+
+/* =========================================
+   FORM FIELDS
+   ========================================= */
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #334155;
+}
+
+.input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 15px;
+
+  border: 1px solid #dbe3ef;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+
+  color: #0f3b82;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:hover {
+  border-color: #93c5fd;
+}
+
+.input:focus {
+  border-color: #2563eb;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================
+   RESEARCH PREFERENCES
+   ========================================= */
+
+.researchSettings {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+}
+
+.researchSetting {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.researchSetting:first-child {
+  padding-top: 0;
+}
+
+.researchSetting:last-child {
+  padding-bottom: 0;
+
+  border-bottom: none;
+}
+
+.researchSettingInfo {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.researchSettingTitle {
+  margin: 0 0 5px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #0f3b82;
+}
+
+.researchSettingDescription {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #64748b;
+}
+
+
+/* =========================================
+   SELECT DROPDOWNS
+   ========================================= */
+
+.select {
+  width: 190px;
+
+  flex-shrink: 0;
+
+  padding: 11px 13px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+
+  color: #0f3b82;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  outline: none;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.select:hover {
+  border-color: #93c5fd;
+
+  background: #ffffff;
+}
+
+.select:focus {
+  border-color: #2563eb;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================
+   SETTING ROW
+   ========================================= */
+
+.settingRow {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 24px;
+}
+
+.settingInfo {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.settingTitle {
+  margin: 0 0 6px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #0f3b82;
+}
+
+.settingDescription {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  color: #64748b;
+}
+
+
+/* =========================================
+   TOGGLE
+   ========================================= */
+
+.toggle {
+  position: relative;
+
+  width: 54px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: #cbd5e1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease;
+}
+
+.toggle:hover {
+  background: #94a3b8;
+}
+
+.toggleActive {
+  background: #2563eb;
+}
+
+.toggleActive:hover {
+  background: #1d4ed8;
+}
+
+.toggleKnob {
+  position: absolute;
+
+  top: 4px;
+  left: 4px;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.2s ease;
+}
+
+.toggleKnobActive {
+  transform: translateX(24px);
+}
+
+
+/* =========================================
+   LIGHT MODE
+   ========================================= */
+
+.lightModeBadge {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border-radius: 9px;
+
+  border: 1px solid #bfdbfe;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   SECURITY
+   ========================================= */
+
+.securityBox {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 16px;
+
+  border-radius: 10px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
+
+  color: #166534;
+}
+
+.securityBox p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.securityDot {
+  width: 9px;
+  height: 9px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+}
+
+
+/* =========================================
+   SAVE BUTTON
+   ========================================= */
+
+.saveContainer {
+  display: flex;
+
+  justify-content: flex-start;
+
+  margin-top: 8px;
+
+  margin-bottom: 30px;
+}
+
+.saveButton {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 13px 24px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 14px rgba(37, 99, 235, 0.18);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.saveButton:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 18px rgba(37, 99, 235, 0.22);
+}
+
+.saveButton:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .page {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .settingRow {
+    align-items: flex-start;
+  }
+
+  .researchSetting {
+    align-items: flex-start;
+  }
+
+  .select {
+    width: 160px;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  .page {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .settingRow {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .researchSetting {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 14px;
+  }
+
+  .select {
+    width: 100%;
+  }
+
+  .lightModeBadge {
+    width: fit-content;
+  }
+
+  .saveButton {
+    width: 100%;
+  }
+}
