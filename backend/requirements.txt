@@ -8,7 +8,13 @@ google-genai
 
 tavily-python
 
-beautifulsoup4
+trafilatura
+
+beautifulsoup4cd C:\Users\nitih\Downloads\ResearchOS
+
+git add backend/requirements.txt
+git commit -m "Add trafilatura dependency"
+git push origin main
 
 requests
 
